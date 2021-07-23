@@ -815,9 +815,7 @@ export interface DatabaseMention {
   database: { id: string }
 }
 
-export interface DateMention {
-  type: "date"
-  date: DatePropertyValue
+export interface DateMention extends DatePropertyValue {
 }
 
 export interface RichTextEquation extends RichTextBase {
